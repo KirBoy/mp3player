@@ -1,7 +1,7 @@
-import Wavesurfer from "wavesurfer.js";
+import Wavesurfer from "../../node_modules/wavesurfer.js/dist/wavesurfer";
 import React, {useEffect, useRef, useState} from "react";
 import {useDispatch} from "react-redux";
-import {nextSong, pauseTrack, playTrack, prevSong} from "./redux/player/playerSlice";
+import {nextSong, pauseTrack, playTrack, prevSong} from "../redux/player/playerSlice";
 
 const Waveform = ({url, duration, songName, author, isPlaying}) => {
     const waveform = useRef(null);

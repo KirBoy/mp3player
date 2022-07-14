@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {setCurrentSong} from "./redux/player/playerSlice";
+import {setCurrentSong} from "../redux/player/playerSlice";
 
 const SongItem = ({songName, author, duration, index}) => {
     const currentSong = useSelector(state => state.player.currentSong);

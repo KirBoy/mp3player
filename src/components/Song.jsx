@@ -12,7 +12,7 @@ const Song = () => {
 
     return (
         <div className='song'>
-            <img className='song__label' src={song.labelUrl} alt=""/>
+            <img className='song__label' src={song.labelUrl} alt={song.songName}/>
             <Waveform
                 isPlaying={isPlaying}
                 songName={song.songName}
